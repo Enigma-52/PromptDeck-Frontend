@@ -17,6 +17,7 @@ import {
   Mail,
   Check,
 } from "lucide-react";
+import logo from "../../public/logo.jpg";
 
 const demoPrompts = [
   {
@@ -67,8 +68,8 @@ export default function Home() {
       <nav className="border-b border-border/50 sticky top-0 z-40 backdrop-blur-xl bg-background/80">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-md bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center text-background text-sm font-black tracking-wider">
-              P
+            <div className="w-12 h-12 rounded-md">
+              <img src={logo} alt="PromptOps Logo" />
             </div>
             <span className="text-lg font-bold tracking-tight">PromptOps</span>
           </div>

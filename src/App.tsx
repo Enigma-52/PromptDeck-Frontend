@@ -3,6 +3,7 @@ import RootLayout from "./layout/RootLayout";
 import "./index.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
+import Workspace from "./routes/Workspace";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Route element={<RootLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="workspace" element={<Workspace />} />
       </Route>
     </Routes>
   );
