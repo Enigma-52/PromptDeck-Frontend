@@ -1,10 +1,10 @@
-"use client";
-
 import { Zap, Settings, BarChart3 } from "lucide-react";
 import { cn } from "../lib/utils";
+import { Link, useLocation } from "react-router-dom";
 
 export function Sidebar() {
-  const pathname = usePathname();
+  const location = useLocation();
+  const pathname = location.pathname;
 
   const navItems = [
     {
@@ -37,7 +37,7 @@ export function Sidebar() {
           return (
             <Link
               key={item.href}
-              href={item.href}
+              to={item.href}
               className={cn(
                 "w-10 h-10 rounded-lg flex items-center justify-center transition-colors",
                 isActive
